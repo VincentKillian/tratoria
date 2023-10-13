@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-pacifico: 'Pacifico', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --bg-color: #920909;
+    --bg-secondary-color: #ffffff;
+    --thin-color: #f0f8ff;
+    --primary-color: #30a528;
+    --secondary-color: #cdcdcd;
+    --bg-secondary-dark-color: #480a0a;
+    --dark-color:#000000;
+
+    --logo-size: 50px;
+    --title-size: 40px;
+    --links-size: 30px;
+    --text-size: 20px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+html{
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    height: 15vh;
+    background-color: var(--bg-color);
+    border: 1px solid var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeSection {
+    height: 85vh;
+    background: url(../images/Pizza.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dark-color);
+
+}
+
+.logo {
+    font-family: var(--font-pacifico);
+    font-size: var(--logo-size);
+    font-weight: 900;
+    color: var(--thin-color);
+    margin-left: 5vw;
+    cursor: pointer;
+}
+
+.links{
+    margin-right: 5vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--links-size);
+    font-family: var(--font-roboto);
+    transition: background-color 1s, color 1s;
+
+}
+
+a:hover {
+    color: var(--thin-color);
+}
+
+.homeTitle {
+    font-family: var(--font-pacifico);
+    font-size: 120px;
+    font-weight: 900;
+    color: var(--thin-color);
+}
+
+.findUs {
+    margin-top: 200px;
+    padding: 10px 100px;
+    background-color: var(--bg-color);
+    color: var(--thin-color);
+    font-size: 40px;
+    border: 1px solid var(--dark-color);
+    border-radius: 50px;
+    height: auto;
+    cursor: pointer;
+    font-family: var(--font-roboto);
+    transition: background-color 1s, color 1s;
+}
+
+.findUs:hover {
+    background-color: var(--bg-secondary-color);
+    color: var(--secondary-color);
+}
+
+.cardSection {
+    height: auto;
+    background-color: var(--bg-secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--dark-color);
+    padding: 60px;
+}
+
+.titleCard {
+    font-family: var(--font-pacifico);
+    color: var(--primary-color);
+    font-size: var(--title-size);
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px ;
+}
+
+.card > h2 {
+    font-family: var(--font-pacifico);
+    color: var(--primary-color);
+    font-size: var(--title-size);
+    text-align: center;
+}
+
+.card > img {
+    width: 300px;
+    height: 200px;
+}
+
+.card > .product {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+    padding: 5px 5px;
+}
+
+.product > p {
+    font-size: var(--text-size);
+}
+
+.product:hover {
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+
+
+.servicesSection{
+    background-color: var(--bg-color);
+    border: 1px solid var(--dark-color);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+}
+
+.titleService {
+    font-family: var(--font-pacifico);
+    color: var(--thin-color);
+    font-size: var(--title-size);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.serviceCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 30px;
+    padding: 0 25%;
+}
+
+.serviceCard {
+    width: 300px;
+    height: 200px;
+    background-color: var(--bg-secondary-dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 20px;
+}
+
+
+.serviceCard:nth-of-type(1){
+    order: 0;
+}.serviceCard:nth-of-type(2){
+    order: 1;
+}.serviceCard:nth-of-type(3){
+    order: 3;
+}.serviceCard:nth-of-type(4){
+    order: 2;
+}.serviceCard:nth-of-type(5){
+    order: 4;
+}.serviceCard:nth-of-type(6){
+    order: 5;
+}
+
+.serviceCard img {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceCard p {
+    color: var(--thin-color);
+    font-size: var(--text-size);
+    padding: 30px;
+    text-align: center;
+    font-family: var(--font-roboto);
+
+}
+
+.contactSection {
+    padding: 50px;
+    border: 1px solid var(--dark-color);
+    height: auto;
+}
+
+.contactSection .contactTitle{
+    font-family: var(--font-pacifico);
+    color: var(--primary-color);
+    font-size: var(--title-size);
+    text-align: center;
+}
+
+.contactSection .containerContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    
+}
+
+.containerContact .infosContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infosContact > p {
+    margin: 20px;
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: var(--font-roboto);
+    cursor: pointer;
+}
+
+p > i {
+    color: aqua;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.containerContact img {
+    max-width: 500px;
+}
+
+footer{
+    background-color: var(--bg-color);
+    border: 1px solid var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > p {
+    font-family: var(--font-pacifico);
+    color: var(--thin-color);
+    font-size: var(--logo-size);
+    margin: 15px auto;
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 0;
+    }
+    html, body{
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+    }
+    li > a {
+        font-size: 20px;
+    }
+
+    .findUs {
+        font-size: 20px;
+        padding: 10px 50px;
+    }
+
+    .homeTitle {
+        font-size: 70px;
+    }
+
+    .cards, .serviceCards, .containerContact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviceCards {
+        margin: 20px 10px;
+        padding: 0;
+    }
+
+    .serviceCard {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .serviceCard:nth-of-type(3){
+        order: 2;
+    }
+
+    .containerContact > img {
+        width: 350px;
+    }
+
+    footer > p {
+        font-size: 30px;
+    }
+}
