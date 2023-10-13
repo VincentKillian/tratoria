@@ -4,10 +4,10 @@
 :root {
     --font-pacifico: 'Pacifico', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
-    --bg-color: #920909;
+    --bg-color: #990000;
     --bg-secondary-color: #ffffff;
-    --thin-color: #f0f8ff;
-    --primary-color: #30a528;
+    --thin-color: #fff;
+    --primary-color: #009900;
     --secondary-color: #cdcdcd;
     --bg-secondary-dark-color: #480a0a;
     --dark-color:#000000;
